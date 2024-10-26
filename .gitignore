@@ -1,0 +1,88 @@
+# Compiled class files
+*.class
+
+# Log files
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# Virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# Eclipse
+*.pydevproject
+.project
+.metadata
+*.tmp
+*.bak
+*.swp
+*~.nib
+.localhistory
+.DS_Store
+.externalToolBuilders/
+*.launch
+.settings/
+.buckd/
+.idea/
+.cxx_workspace/
+.cxx_wp/
+*.class
+*.launch
+.settings/
+.buckd/
+bin/
+.gitattributes
+.gitattributes
+*.txt~
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# IntelliJ IDEA
+*.iml
+.idea/
+out/
+
+# Compresed Files 
+*.lz4
+*.zip
+*.rar
+*.7z
+*.gz
+*.tar
+*.tgz
+*.bzip
+*.bzip2
+*.bz2
+*.xz
+*.lzma
+*.cab
+*.iso
+*.dmg
+*.jar
+*.war
+*.ear
+*.sar
+*.rle 
+
+# Logs
+*.log
+*.txt
