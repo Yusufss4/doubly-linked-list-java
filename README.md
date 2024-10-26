@@ -23,17 +23,13 @@ The Main.java file on top of the project is added to showcase the usage of the r
 - [Understanding the `reverseAll` Function](#understanding-the-reverseall-function)
     - [Code Snippet](#code-snippet)
     - [Step-by-Step Explanation](#step-by-step-explanation)
-    - [Visualization](#visualization)
-  - [Initial State of the List](#initial-state-of-the-list)
-    - [Graphical Representation](#graphical-representation)
-  - [The `reverseAll` Function](#the-reverseall-function)
   - [Visualization at Each Step](#visualization-at-each-step)
-    - [**Initial List**](#initial-list)
+    - [Initial List](#initial-list)
     - [Before Iteration](#before-iteration)
-    - [**After Iteration 1**](#after-iteration-1)
-    - [**After Iteration 2**](#after-iteration-2)
-    - [**After Iteration 3**](#after-iteration-3)
-    - [**After Swapping `head` and `tail`**](#after-swapping-head-and-tail)
+    - [After Iteration 1](#after-iteration-1)
+    - [After Iteration 2](#after-iteration-2)
+    - [After Iteration 3](#after-iteration-3)
+    - [After Swapping `head` and `tail`](#after-swapping-head-and-tail)
 
 ## Features
 
@@ -157,53 +153,9 @@ public void reverseAll() {
      - `tail = temp;`
    - This updates the `head` and `tail` to reflect the reversed list.
 
-### Visualization
----
-
-## Initial State of the List
-
-Let's start with the initial state of the doubly linked list:
-
-- **Head and Tail Pointers**:
-  - `head` points to `Node1` (data = 1)
-  - `tail` points to `Node3` (data = 3)
-
-- **Nodes**:
-  - `Node1`: data = 1, `prev` = `null`, `next` = `Node2`
-  - `Node2`: data = 2, `prev` = `Node1`, `next` = `Node3`
-  - `Node3`: data = 3, `prev` = `Node2`, `next` = `null`
-
-### Graphical Representation
-
-```
-null <- [1] <-> [2] <-> [3] -> null
-```
-
----
-
-## The `reverseAll` Function
-
-Here is the `reverseAll` function for reference:
-
-```java
-public void reverseAll() {
-    Node<T> current = head;
-    while (current != null) {
-        Node<T> temp = current.getNext();
-        current.setNext(current.getPrev());
-        current.setPrev(temp);
-        current = temp;
-    }
-
-    Node<T> temp = head;
-    head = tail;
-    tail = temp;
-}
-```
-
 ## Visualization at Each Step
 
-### **Initial List**
+### Initial List
 
 ```
 head -> [1] <-> [2] <-> [3] <- tail
@@ -216,7 +168,7 @@ head -> [1] <-> [2] <-> [3] <- tail
 [3] -> prev: Node2, next: null
 ```
 
-### **After Iteration 1**
+### After Iteration 1
 
 ```
 *[1] -> prev: Node2, next: null
@@ -224,7 +176,7 @@ head -> [1] <-> [2] <-> [3] <- tail
 [3] -> prev: Node2, next: null
 ```
 
-### **After Iteration 2**
+### After Iteration 2
 
 ```
 [1] -> prev: Node2, next: null
@@ -232,7 +184,7 @@ head -> [1] <-> [2] <-> [3] <- tail
 [3] -> prev: Node2, next: null
 ```
 
-### **After Iteration 3**
+### After Iteration 3
 
 ```
 [1] -> prev: Node2, next: null
@@ -240,7 +192,7 @@ head -> [1] <-> [2] <-> [3] <- tail
 *[3] -> prev: null, next: Node2
 ```
 
-### **After Swapping `head` and `tail`**
+### After Swapping `head` and `tail`
 
 ```
 head -> [3] <-> [2] <-> [1] <- tail
