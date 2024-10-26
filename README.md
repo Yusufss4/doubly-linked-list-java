@@ -6,6 +6,8 @@ This project is written for the Boğaziçi University Master of Science in Softw
 
 The repository link of the project can be located via given [link](https://github.com/Yusufss4/doubly-linked-list-java)
 
+The Main.java file on top of the project is added to showcase the usage of the reverseAll function in the linked list with more simplifed DoublyLinkedList implementation. It both includes Node.java and DoublyLinkedList.java files.
+
 ## Table of Contents
 
 - [Doubly Linked List Implementation in Java](#doubly-linked-list-implementation-in-java)
@@ -156,9 +158,6 @@ public void reverseAll() {
    - This updates the `head` and `tail` to reflect the reversed list.
 
 ### Visualization
-
-Certainly! I'd be happy to provide a step-by-step visualization of the `reverseAll` function. We'll use an example doubly linked list with elements `[1, 2, 3]` to illustrate how the function reverses the list.
-
 ---
 
 ## Initial State of the List
